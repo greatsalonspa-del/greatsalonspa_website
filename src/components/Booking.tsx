@@ -1,4 +1,4 @@
-const SQUARE_BOOKING_URL = "https://square.site/book/YOUR-SQUARE-SITE-ID";
+const SQUARE_BOOKING_URL = "https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services";
 
 export default function Booking() {
   return (

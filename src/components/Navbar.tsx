@@ -88,7 +88,7 @@ export default function Navbar() {
             (571) 670-9838
           </a>
           <a
-            href="https://square.site/book/YOUR-SQUARE-SITE-ID"
+            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 lg:px-7 py-2.5 bg-[#1C1210] text-white hover:bg-[#C17E68] transition-colors duration-400 uppercase tracking-[0.18em]"
@@ -104,7 +104,7 @@ export default function Navbar() {
 
         <div className="md:hidden flex items-center gap-2.5">
           <a
-            href="https://square.site/book/YOUR-SQUARE-SITE-ID"
+            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-[#1C1210] text-white uppercase tracking-[0.15em]"
