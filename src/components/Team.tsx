@@ -127,8 +127,7 @@ export default function Team() {
           </p>
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-            target="_blank"
-            rel="noopener noreferrer"
+           
             className="group inline-flex items-center gap-3 px-7 sm:px-8 py-3.5 bg-[#1C1210] text-white hover:bg-[#C17E68] active:bg-[#C17E68] transition-colors duration-400 uppercase tracking-[0.2em] shrink-0"
             style={{
               fontFamily: "var(--font-inter)",

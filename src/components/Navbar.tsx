@@ -89,8 +89,7 @@ export default function Navbar() {
           </a>
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-            target="_blank"
-            rel="noopener noreferrer"
+           
             className="px-6 lg:px-7 py-2.5 bg-[#1C1210] text-white hover:bg-[#C17E68] transition-colors duration-400 uppercase tracking-[0.18em]"
             style={{
               fontFamily: "var(--font-inter)",
@@ -105,8 +104,7 @@ export default function Navbar() {
         <div className="md:hidden flex items-center gap-2.5">
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-            target="_blank"
-            rel="noopener noreferrer"
+           
             className="px-4 py-2 bg-[#1C1210] text-white uppercase tracking-[0.15em]"
             style={{
               fontFamily: "var(--font-inter)",

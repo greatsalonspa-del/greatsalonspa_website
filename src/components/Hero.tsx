@@ -84,8 +84,7 @@ export default function Hero() {
 
         <a
           href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-          target="_blank"
-          rel="noopener noreferrer"
+         
           className="group inline-flex items-center gap-3 sm:gap-4 px-8 sm:px-12 py-4 sm:py-[18px] bg-[#1C1210] text-white hover:bg-[#C17E68] active:bg-[#C17E68] transition-all duration-500 uppercase tracking-[0.2em] sm:tracking-[0.25em] animate-fade-in-up anim-delay-400"
           style={{
             fontFamily: "var(--font-inter)",

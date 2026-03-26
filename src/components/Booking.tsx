@@ -39,8 +39,6 @@ export default function Booking() {
 
         <a
           href={SQUARE_BOOKING_URL}
-          target="_blank"
-          rel="noopener noreferrer"
           className="group inline-flex items-center gap-3 sm:gap-4 px-10 sm:px-14 py-4 sm:py-[18px] bg-[#1C1210] text-white hover:bg-[#C17E68] active:bg-[#C17E68] transition-all duration-500 uppercase tracking-[0.25em] mb-10 sm:mb-12"
           style={{
             fontFamily: "var(--font-inter)",
