@@ -90,27 +90,27 @@ const SERVICES = [
   },
   {
     num: "02",
-    title: "Nails",
-    desc: "Manicures, pedicures, gel, acrylics, and nail art crafted for every style and occasion.",
-    Icon: NailPolishIcon,
+    title: "Wax & Threading",
+    desc: "Brow shaping, facial threading, and full-body waxing — gentle, precise, and long-lasting.",
+    Icon: ThreadingIcon,
   },
   {
     num: "03",
-    title: "Lashes",
-    desc: "Extensions, lifts, and tinting that open up your eyes and simplify your routine.",
-    Icon: LashesIcon,
-  },
-  {
-    num: "04",
     title: "Facials",
     desc: "Custom facials, deep cleansing, and anti-aging treatments for skin that genuinely glows.",
     Icon: FacialIcon,
   },
   {
+    num: "04",
+    title: "Lashes",
+    desc: "Extensions, lifts, and tinting that open up your eyes and simplify your routine.",
+    Icon: LashesIcon,
+  },
+  {
     num: "05",
-    title: "Wax & Threading",
-    desc: "Brow shaping, facial threading, and full-body waxing — gentle, precise, and long-lasting.",
-    Icon: ThreadingIcon,
+    title: "Nails",
+    desc: "Manicures, pedicures, gel, acrylics, and nail art crafted for every style and occasion.",
+    Icon: NailPolishIcon,
   },
   {
     num: "06",
@@ -166,7 +166,7 @@ export default function ServiceStrip() {
               <div
                 key={s.title}
                 className="group bg-[#0D0D0D] hover:bg-[#0f0f0f] transition-colors duration-300
-                           p-5 sm:p-8 lg:p-10 flex flex-col"
+                           p-5 sm:p-8 lg:p-10 flex flex-col items-center text-center sm:items-start sm:text-left"
               >
                 {/* Icon */}
                 <div className="w-8 h-8 sm:w-10 sm:h-10 text-[#C4714A] mb-3 sm:mb-5">

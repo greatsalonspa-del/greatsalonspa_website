@@ -74,22 +74,26 @@ export default function Navbar() {
             (571) 670-9838
           </a>
           <a
-            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-            className="px-6 py-2.5 bg-white text-[#0D0D0D] hover:bg-[#C4714A] hover:text-white transition-all duration-300 uppercase tracking-[0.2em]"
+            href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-6 py-2.5 bg-[#C4714A] text-white hover:bg-white hover:text-[#0D0D0D] transition-all duration-300 uppercase tracking-[0.2em]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
-            Book Now
+            Gift Cards
           </a>
         </div>
 
         {/* Mobile */}
         <div className="md:hidden flex items-center gap-3">
           <a
-            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
+            href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-4 py-2 bg-[#C4714A] text-white uppercase tracking-[0.15em]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
-            Book
+            Gift Cards
           </a>
           <button
             onClick={() => setOpen(!open)}
@@ -136,6 +140,18 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-[#C4714A]/70 hover:text-[#C4714A] uppercase tracking-[0.2em] transition-colors block py-1"
+              style={{ fontFamily: "var(--font-inter)", fontSize: "13px", fontWeight: 500 }}
+            >
+              Gift Cards
+            </a>
+          </li>
           <li className="pt-3 border-t border-white/[0.06]">
             <a
               href="tel:+15716709838"

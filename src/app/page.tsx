@@ -5,6 +5,7 @@ import ServiceStrip from "@/components/ServiceStrip";
 import BrandStatement from "@/components/BrandStatement";
 import About from "@/components/About";
 import Booking from "@/components/Booking";
+import GiftCard from "@/components/GiftCard";
 import LocationMap from "@/components/LocationMap";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <BrandStatement />
         <About />
         <Booking />
+        <GiftCard />
         <LocationMap />
       </main>
       <Footer />
