@@ -34,16 +34,16 @@ export default function Navbar() {
     >
       <nav className="max-w-screen-xl mx-auto px-7 sm:px-10 lg:px-16 h-[64px] sm:h-[72px] flex items-center justify-between">
         {/* Logo */}
-        <a href="#home" className="flex items-baseline gap-2 group shrink-0">
+        <a href="#home" className="flex flex-col group shrink-0">
           <span
-            className="text-white leading-none group-hover:text-[#C4714A] transition-colors duration-300"
-            style={{ fontFamily: "var(--font-great-vibes)", fontSize: "28px" }}
+            className="text-white leading-none block group-hover:text-[#C4714A] transition-colors duration-300"
+            style={{ fontFamily: "var(--font-great-vibes)", fontSize: "36px" }}
           >
             Great
           </span>
           <span
-            className="text-white/30 uppercase tracking-[0.4em] hidden sm:inline"
-            style={{ fontFamily: "var(--font-playfair)", fontSize: "7.5px", fontWeight: 400 }}
+            className="text-white/20 uppercase tracking-[0.4em] mt-0.5 block"
+            style={{ fontFamily: "var(--font-playfair)", fontSize: "8px", fontWeight: 400 }}
           >
             Salon &amp; Spa
           </span>
