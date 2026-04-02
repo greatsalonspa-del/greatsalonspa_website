@@ -122,14 +122,19 @@ export default function Footer() {
             &copy; {year} Great Salon &amp; Spa. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
-            {["Instagram", "Facebook"].map((p) => (
+            {[
+              { label: "Instagram", href: "https://www.instagram.com/greatsalonspa" },
+              { label: "Facebook",  href: "https://www.facebook.com/people/Great-Salon-Spa/61580587087147/?mibextid=wwXIfr" },
+            ].map((s) => (
               <a
-                key={p}
-                href="#"
+                key={s.label}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/18 hover:text-[#C4714A] uppercase tracking-[0.22em] transition-colors duration-200 py-1"
                 style={{ fontFamily: "var(--font-inter)", fontSize: "9px" }}
               >
-                {p}
+                {s.label}
               </a>
             ))}
           </div>

@@ -81,7 +81,10 @@ const jsonLd = {
     { "@type": "OpeningHoursSpecification", dayOfWeek: ["Sunday"], opens: "10:00", closes: "16:00" },
   ],
   hasMap: "https://maps.google.com/?cid=3638622736695870011",
-  sameAs: [],
+  sameAs: [
+    "https://www.instagram.com/greatsalonspa",
+    "https://www.facebook.com/people/Great-Salon-Spa/61580587087147/",
+  ],
 };
 
 export default function RootLayout({
