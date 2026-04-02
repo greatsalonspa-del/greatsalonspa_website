@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Team", href: "#team" },
 ];
 
 export default function Navbar() {
@@ -13,17 +12,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const fn = () => setScrolled(window.scrollY > 28);
+    const fn = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
   }, []);
 
   useEffect(() => {
-    if (open) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
@@ -33,41 +28,35 @@ export default function Navbar() {
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#FAF6F1]/95 backdrop-blur-md shadow-[0_1px_0_0_#E2D0C6]"
+          ? "bg-[#0D0D0D]/92 backdrop-blur-sm border-b border-white/[0.06]"
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-10 h-[64px] sm:h-[72px] flex items-center justify-between">
-        <a href="#home" className="flex flex-col leading-none shrink-0 group">
+      <nav className="max-w-screen-xl mx-auto px-7 sm:px-10 lg:px-16 h-[64px] sm:h-[72px] flex items-center justify-between">
+        {/* Logo */}
+        <a href="#home" className="flex items-baseline gap-2 group shrink-0">
           <span
-            className="text-[#C17E68] leading-none group-hover:text-[#A76753] transition-colors"
-            style={{ fontFamily: "var(--font-great-vibes)", fontSize: "24px" }}
+            className="text-white leading-none group-hover:text-[#C4714A] transition-colors duration-300"
+            style={{ fontFamily: "var(--font-great-vibes)", fontSize: "28px" }}
           >
             Great
           </span>
           <span
-            className="text-[#3A2519]/50 uppercase tracking-[0.3em] leading-none"
-            style={{
-              fontFamily: "var(--font-playfair)",
-              fontSize: "7px",
-              fontWeight: 400,
-            }}
+            className="text-white/30 uppercase tracking-[0.4em] hidden sm:inline"
+            style={{ fontFamily: "var(--font-playfair)", fontSize: "7.5px", fontWeight: 400 }}
           >
             Salon &amp; Spa
           </span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-8 lg:gap-10">
+        {/* Desktop nav */}
+        <ul className="hidden md:flex items-center gap-10">
           {NAV_LINKS.map((l) => (
             <li key={l.label}>
               <a
                 href={l.href}
-                className="text-[#3A2519]/55 hover:text-[#C17E68] transition-colors duration-200 uppercase tracking-[0.18em]"
-                style={{
-                  fontFamily: "var(--font-inter)",
-                  fontSize: "11px",
-                  fontWeight: 400,
-                }}
+                className="text-white/40 hover:text-white transition-colors duration-200 uppercase tracking-[0.22em]"
+                style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
               >
                 {l.label}
               </a>
@@ -75,92 +64,83 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="hidden md:flex items-center gap-5 lg:gap-6">
+        {/* Desktop right */}
+        <div className="hidden md:flex items-center gap-6">
           <a
             href="tel:+15716709838"
-            className="text-[#8A7268] hover:text-[#C17E68] transition-colors"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "12px",
-              fontWeight: 400,
-            }}
+            className="text-white/30 hover:text-white/60 transition-colors"
+            style={{ fontFamily: "var(--font-inter)", fontSize: "12px", fontWeight: 300 }}
           >
             (571) 670-9838
           </a>
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-           
-            className="px-6 lg:px-7 py-2.5 bg-[#1C1210] text-white hover:bg-[#C17E68] transition-colors duration-400 uppercase tracking-[0.18em]"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "10px",
-              fontWeight: 500,
-            }}
+            className="px-6 py-2.5 bg-white text-[#0D0D0D] hover:bg-[#C4714A] hover:text-white transition-all duration-300 uppercase tracking-[0.2em]"
+            style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
             Book Now
           </a>
         </div>
 
-        <div className="md:hidden flex items-center gap-2.5">
+        {/* Mobile */}
+        <div className="md:hidden flex items-center gap-3">
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-           
-            className="px-4 py-2 bg-[#1C1210] text-white uppercase tracking-[0.15em]"
-            style={{
-              fontFamily: "var(--font-inter)",
-              fontSize: "9px",
-              fontWeight: 500,
-            }}
+            className="px-5 py-2.5 bg-white text-[#0D0D0D] uppercase tracking-[0.15em]"
+            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 600 }}
           >
             Book
           </a>
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 -mr-1"
-            aria-label="Menu"
+            className="p-2 -mr-1.5 flex flex-col justify-center gap-[5px]"
+            aria-label="Toggle menu"
           >
             <span
-              className={`block w-5 h-px bg-[#3A2519] mb-[5px] transition-all duration-300 ${open ? "rotate-45 translate-y-[6px]" : ""}`}
+              className={`block w-5 h-[1.5px] bg-white transition-all duration-300 ${open ? "rotate-45 translate-y-[6.5px]" : ""}`}
             />
             <span
-              className={`block w-5 h-px bg-[#3A2519] mb-[5px] transition-all duration-300 ${open ? "opacity-0" : ""}`}
+              className={`block w-5 h-[1.5px] bg-white transition-all duration-300 ${open ? "opacity-0" : ""}`}
             />
             <span
-              className={`block w-5 h-px bg-[#3A2519] transition-all duration-300 ${open ? "-rotate-45 -translate-y-[6px]" : ""}`}
+              className={`block w-5 h-[1.5px] bg-white transition-all duration-300 ${open ? "-rotate-45 -translate-y-[6.5px]" : ""}`}
             />
           </button>
         </div>
       </nav>
 
-      {/* Mobile menu overlay */}
+      {/* Mobile backdrop */}
       {open && (
         <div
-          className="md:hidden fixed inset-0 top-[64px] bg-black/20 z-40"
+          className="md:hidden fixed inset-0 top-[64px] bg-black/70 z-40"
           onClick={() => setOpen(false)}
         />
       )}
 
+      {/* Mobile drawer */}
       <div
-        className={`md:hidden bg-[#FAF6F1] border-b border-[#E2D0C6]/70 overflow-hidden transition-all duration-300 relative z-50 ${open ? "max-h-64 opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden bg-[#0D0D0D] border-b border-white/[0.06] overflow-hidden transition-all duration-300 relative z-50 ${
+          open ? "max-h-72 opacity-100" : "max-h-0 opacity-0"
+        }`}
       >
-        <ul className="px-5 pb-6 pt-3 flex flex-col gap-5">
+        <ul className="px-7 pb-7 pt-3 flex flex-col gap-5">
           {NAV_LINKS.map((l) => (
             <li key={l.label}>
               <a
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-[#3A2519] hover:text-[#C17E68] active:text-[#C17E68] uppercase tracking-[0.15em] transition-colors block py-1"
+                className="text-white/55 hover:text-white uppercase tracking-[0.2em] transition-colors block py-1"
                 style={{ fontFamily: "var(--font-inter)", fontSize: "13px" }}
               >
                 {l.label}
               </a>
             </li>
           ))}
-          <li className="pt-2 border-t border-[#E2D0C6]/50">
+          <li className="pt-3 border-t border-white/[0.06]">
             <a
               href="tel:+15716709838"
-              className="text-[#8A7268] active:text-[#C17E68] block py-1"
-              style={{ fontFamily: "var(--font-inter)", fontSize: "13px" }}
+              className="text-white/30 hover:text-white/60 block py-1 transition-colors"
+              style={{ fontFamily: "var(--font-inter)", fontSize: "13px", fontWeight: 300 }}
             >
               (571) 670-9838
             </a>
