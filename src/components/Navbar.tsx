@@ -86,8 +86,8 @@ export default function Navbar() {
         <div className="md:hidden flex items-center gap-3">
           <a
             href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
-            className="px-5 py-2.5 bg-white text-[#0D0D0D] uppercase tracking-[0.15em]"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 600 }}
+            className="px-4 py-2 bg-[#C4714A] text-white uppercase tracking-[0.15em]"
+            style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
             Book
           </a>

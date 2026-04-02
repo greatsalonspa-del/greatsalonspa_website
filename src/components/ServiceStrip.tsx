@@ -166,16 +166,16 @@ export default function ServiceStrip() {
               <div
                 key={s.title}
                 className="group bg-[#0D0D0D] hover:bg-[#0f0f0f] transition-colors duration-300
-                           p-7 sm:p-8 lg:p-10 flex flex-col"
+                           p-5 sm:p-8 lg:p-10 flex flex-col"
               >
                 {/* Icon */}
-                <div className="w-10 h-10 text-[#C4714A] mb-5">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 text-[#C4714A] mb-3 sm:mb-5">
                   <Icon />
                 </div>
 
                 {/* Number */}
                 <span
-                  className="text-white/20 mb-2"
+                  className="text-white/20 mb-1.5 sm:mb-2"
                   style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400, letterSpacing: "0.18em" }}
                 >
                   {s.num}
@@ -183,18 +183,18 @@ export default function ServiceStrip() {
 
                 {/* Name */}
                 <h3
-                  className="text-white mb-4"
-                  style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(20px, 2.8vw, 26px)", fontWeight: 500 }}
+                  className="text-white mb-3 sm:mb-4"
+                  style={{ fontFamily: "var(--font-playfair)", fontSize: "clamp(17px, 2.8vw, 26px)", fontWeight: 500 }}
                 >
                   {s.title}
                 </h3>
 
                 {/* Terracotta separator */}
-                <div className="w-8 h-px bg-[#C4714A]/40 mb-4" aria-hidden="true" />
+                <div className="w-6 sm:w-8 h-px bg-[#C4714A]/40 mb-3 sm:mb-4" aria-hidden="true" />
 
-                {/* Description */}
+                {/* Description — hidden on mobile to keep 2-col cards clean */}
                 <p
-                  className="text-white/45 leading-relaxed flex-1"
+                  className="hidden sm:block text-white/45 leading-relaxed flex-1"
                   style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13px, 1.5vw, 14px)", fontWeight: 300 }}
                 >
                   {s.desc}
@@ -203,7 +203,7 @@ export default function ServiceStrip() {
                 {/* Book link */}
                 <a
                   href={SQUARE_URL}
-                  className="inline-flex items-center gap-2 mt-6
+                  className="inline-flex items-center gap-2 mt-4 sm:mt-6
                              text-[#C4714A]/55 hover:text-[#C4714A]
                              transition-colors duration-200 uppercase tracking-[0.15em]"
                   style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}

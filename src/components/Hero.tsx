@@ -49,14 +49,14 @@ export default function Hero() {
 
       {/* Main content */}
       <div className="relative z-10 flex flex-col items-center text-center w-full px-6 sm:px-10
-                      py-20 sm:py-28 md:py-32 max-w-5xl mx-auto">
+                      py-12 sm:py-28 md:py-32 max-w-5xl mx-auto">
 
         {/* Location eyebrow */}
-        <div className="flex items-center gap-3 sm:gap-4 mb-5 sm:mb-9 lg:mb-14 animate-fade-in anim-delay-100 ml-16 sm:ml-32 lg:ml-48">
+        <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-9 lg:mb-14 animate-fade-in anim-delay-100 ml-32 sm:ml-32 lg:ml-48">
           <div className="h-px w-6 sm:w-10 bg-white/22" />
           <span
             className="text-white/45 uppercase tracking-[0.45em] sm:tracking-[0.65em]"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(10px, 2.5vw, 11px)", fontWeight: 300 }}
+            style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(9px, 2vw, 11px)", fontWeight: 300 }}
           >
             Vienna, Virginia
           </span>
@@ -68,7 +68,7 @@ export default function Hero() {
           className="leading-[0.82] select-none animate-fade-in-up anim-delay-200"
           style={{
             fontFamily: "var(--font-great-vibes)",
-            fontSize: "clamp(96px, 22vw, 300px)",
+            fontSize: "clamp(140px, 35vw, 300px)",
             color: "#FFFFFF",
             textShadow: "0 4px 48px rgba(0,0,0,0.35)",
           }}
@@ -77,7 +77,7 @@ export default function Hero() {
         </h1>
 
         {/* SALON & SPA */}
-        <div className="flex items-center gap-3 sm:gap-7 lg:gap-10 mt-2 sm:mt-4 lg:mt-10 mb-4 sm:mb-9 animate-fade-in-up anim-delay-300">
+        <div className="flex items-center gap-3 sm:gap-7 lg:gap-10 mt-6 sm:mt-4 lg:mt-10 mb-5 sm:mb-9 animate-fade-in-up anim-delay-300">
           <div className="h-px w-8 sm:w-16 lg:w-24 bg-white/28" />
           <h2
             className="text-white/80 uppercase whitespace-nowrap"
@@ -122,7 +122,7 @@ export default function Hero() {
 
         {/* Services strip */}
         <div className="flex flex-wrap justify-center gap-x-3 sm:gap-x-4 gap-y-1.5
-                        mb-8 sm:mb-14 animate-fade-in anim-delay-400 px-2 max-w-[320px] sm:max-w-none">
+                        mb-6 sm:mb-14 animate-fade-in anim-delay-400 px-2 max-w-[320px] sm:max-w-none">
           {["Hair", "Nails", "Lashes", "Facials", "Wax", "Threading"].map((s, i, arr) => (
             <span key={s} className="flex items-center gap-3 sm:gap-4">
               <span
