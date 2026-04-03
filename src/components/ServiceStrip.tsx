@@ -13,14 +13,13 @@ function ScissorsIcon() {
   );
 }
 
-function NailPolishIcon() {
+function WaxIcon() {
   return (
     <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.5"
          strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-      <rect x="14" y="19" width="12" height="14" rx="2" />
-      <rect x="17" y="10" width="6" height="10" rx="1" />
-      <line x1="20" y1="7" x2="20" y2="10" />
-      <path d="M17 33 Q20 37 23 33" />
+      <rect x="5" y="17" width="22" height="8" rx="1.5" />
+      <path d="M27 17 L37 21 L27 25" />
+      <path d="M11 14 C11 14 10 10 12 7 C13 10 14 10 15 7 C16 10 17 10 18 7 C19 10 18 14 18 14" />
     </svg>
   );
 }
@@ -84,38 +83,38 @@ function LotusIcon() {
 const SERVICES = [
   {
     num: "01",
-    title: "Hair",
-    desc: "Precision cuts, bold color, balayage, keratin treatments, and blowouts — by stylists who listen.",
-    Icon: ScissorsIcon,
-  },
-  {
-    num: "02",
-    title: "Wax & Threading",
-    desc: "Brow shaping, facial threading, and full-body waxing — gentle, precise, and long-lasting.",
+    title: "Threading",
+    desc: "Precise brow shaping and facial threading — clean lines, defined arches, lasting results.",
     Icon: ThreadingIcon,
   },
   {
-    num: "03",
-    title: "Facials",
-    desc: "Custom facials, deep cleansing, and anti-aging treatments for skin that genuinely glows.",
-    Icon: FacialIcon,
+    num: "02",
+    title: "Waxing",
+    desc: "Full-body and facial waxing — smooth, long-lasting results with a gentle touch.",
+    Icon: WaxIcon,
   },
   {
-    num: "04",
+    num: "03",
     title: "Lashes",
     desc: "Extensions, lifts, and tinting that open up your eyes and simplify your routine.",
     Icon: LashesIcon,
   },
   {
+    num: "04",
+    title: "Facials",
+    desc: "Custom facials, deep cleansing, and anti-aging treatments for skin that genuinely glows.",
+    Icon: FacialIcon,
+  },
+  {
     num: "05",
-    title: "Nails",
-    desc: "Manicures, pedicures, gel, acrylics, and nail art crafted for every style and occasion.",
-    Icon: NailPolishIcon,
+    title: "Hair",
+    desc: "Precision cuts, bold color, balayage, keratin treatments, and blowouts — by stylists who listen.",
+    Icon: ScissorsIcon,
   },
   {
     num: "06",
     title: "Beauty Care",
-    desc: "Full beauty packages, bridal services, and personalized wellness — your day, your way.",
+    desc: "Full beauty packages and personalized wellness treatments — your day, entirely your way.",
     Icon: LotusIcon,
   },
 ];
