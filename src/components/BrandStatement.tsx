@@ -26,7 +26,7 @@ export default function BrandStatement() {
           <div className="lg:max-w-sm lg:pb-3 shrink-0">
             <div className="w-10 h-px bg-white/15 mb-6 sm:mb-7" aria-hidden="true" />
             <p
-              className="text-white/40 leading-[1.85] mb-8 sm:mb-10"
+              className="text-white/60 leading-[1.85] mb-8 sm:mb-10"
               style={{ fontFamily: "var(--font-inter)", fontSize: "14px", fontWeight: 300 }}
             >
               At Great Salon &amp; Spa, beauty isn&apos;t a transaction — it&apos;s
@@ -35,7 +35,7 @@ export default function BrandStatement() {
             </p>
             <a
               href="#about"
-              className="group inline-flex items-center gap-3 text-white/40 hover:text-[#C4714A] transition-colors duration-300 uppercase tracking-[0.22em]"
+              className="group inline-flex items-center gap-3 text-white/60 hover:text-[#C4714A] transition-colors duration-300 uppercase tracking-[0.22em]"
               style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 500 }}
             >
               Our Story

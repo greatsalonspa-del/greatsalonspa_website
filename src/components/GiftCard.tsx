@@ -40,7 +40,7 @@ export default function GiftCard() {
 
         {/* Subtext */}
         <p
-          className="text-white/45 leading-[1.85] mb-10 sm:mb-12 max-w-sm"
+          className="text-white/65 leading-[1.85] mb-10 sm:mb-12 max-w-sm"
           style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13px, 1.8vw, 15px)", fontWeight: 300 }}
         >
           Treat someone to a Great Salon &amp; Spa experience. eGift cards are delivered instantly by email and redeemable for any service.
@@ -72,7 +72,7 @@ export default function GiftCard() {
 
         {/* Fine print */}
         <p
-          className="text-white/35 mt-6"
+          className="text-white/50 mt-6"
           style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}
         >
           Delivered instantly · Valid for all services

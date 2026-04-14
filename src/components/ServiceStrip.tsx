@@ -164,7 +164,7 @@ export default function ServiceStrip() {
             return (
               <div
                 key={s.title}
-                className="group bg-[#0D0D0D] hover:bg-[#141414] transition-colors duration-300
+                className="group bg-[#0D0D0D] hover:bg-[#191919] transition-colors duration-300 cursor-pointer
                            p-5 sm:p-8 lg:p-10 flex flex-col items-center text-center sm:items-start sm:text-left"
               >
                 {/* Icon */}
@@ -193,7 +193,7 @@ export default function ServiceStrip() {
 
                 {/* Description */}
                 <p
-                  className="text-white/45 leading-relaxed flex-1 line-clamp-3 sm:line-clamp-none"
+                  className="text-white/60 leading-relaxed flex-1 line-clamp-3 sm:line-clamp-none"
                   style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(12px, 1.5vw, 14px)", fontWeight: 300 }}
                 >
                   {s.desc}
@@ -203,7 +203,7 @@ export default function ServiceStrip() {
                 <a
                   href={SQUARE_URL}
                   className="inline-flex items-center gap-2 mt-4 sm:mt-6
-                             text-[#C4714A]/55 hover:text-[#C4714A]
+                             text-[#C4714A]/80 hover:text-[#C4714A]
                              transition-colors duration-200 uppercase tracking-[0.15em]"
                   style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 500 }}
                 >

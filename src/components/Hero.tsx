@@ -96,7 +96,7 @@ export default function Hero() {
 
         {/* Tagline — word-by-word reveal */}
         <p
-          className="text-white/48 mb-5 sm:mb-12 px-2 flex flex-wrap justify-center gap-x-[0.32em]"
+          className="text-white/65 mb-5 sm:mb-12 px-2 flex flex-wrap justify-center gap-x-[0.32em]"
           style={{
             fontFamily: "var(--font-playfair)",
             fontSize: "clamp(14px, 2vw, 18px)",
@@ -166,7 +166,7 @@ export default function Hero() {
         <div className="flex items-center gap-4 sm:gap-5 mt-5 sm:mt-8 animate-fade-in anim-delay-600">
           <a
             href="tel:+15716709838"
-            className="text-white/32 hover:text-white/65 transition-colors duration-200"
+            className="text-white/52 hover:text-white/80 transition-colors duration-200"
             style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(12px, 2.5vw, 13px)", fontWeight: 300 }}
           >
             (571) 670-9838

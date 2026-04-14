@@ -37,7 +37,7 @@ export default function About() {
             <div className="w-12 h-px bg-[#C4714A]/25 mb-7 sm:mb-9" aria-hidden="true" />
 
             <p
-              className="text-white/50 leading-[1.9] mb-4"
+              className="text-white/65 leading-[1.9] mb-4"
               style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13.5px, 2.3vw, 15px)", fontWeight: 300 }}
             >
               Great Salon &amp; Spa is a beauty destination built on intention. Every service is
@@ -45,7 +45,7 @@ export default function About() {
               it&apos;s your first visit or your fiftieth.
             </p>
             <p
-              className="text-white/50 leading-[1.9] mb-10 sm:mb-12"
+              className="text-white/65 leading-[1.9] mb-10 sm:mb-12"
               style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13.5px, 2.3vw, 15px)", fontWeight: 300 }}
             >
               Located in Vienna, Virginia, our licensed professionals bring years of expertise
@@ -66,7 +66,7 @@ export default function About() {
                 <div key={item} className="flex items-center gap-3">
                   <span className="w-1 h-1 rounded-full bg-[#C4714A] shrink-0" />
                   <span
-                    className="text-white/45"
+                    className="text-white/60"
                     style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13px, 2vw, 13.5px)", fontWeight: 300 }}
                   >
                     {item}

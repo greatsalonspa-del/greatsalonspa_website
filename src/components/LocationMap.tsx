@@ -21,7 +21,7 @@ export default function LocationMap() {
           {/* Address */}
           <div>
             <p
-              className="text-white/25 uppercase tracking-[0.4em] mb-2"
+              className="text-white/45 uppercase tracking-[0.4em] mb-2"
               style={{ fontFamily: "var(--font-inter)", fontSize: "9px", fontWeight: 400 }}
             >
               Find Us

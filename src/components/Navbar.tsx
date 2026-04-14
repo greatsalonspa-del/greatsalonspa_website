@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
+  { label: "Location", href: "#location" },
 ];
 
 export default function Navbar() {
@@ -55,7 +56,7 @@ export default function Navbar() {
             <li key={l.label}>
               <a
                 href={l.href}
-                className="text-white/40 hover:text-white transition-colors duration-200 uppercase tracking-[0.22em]"
+                className="text-white/55 hover:text-white transition-colors duration-200 uppercase tracking-[0.22em]"
                 style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
               >
                 {l.label}
@@ -96,17 +97,17 @@ export default function Navbar() {
         {/* Mobile */}
         <div className="md:hidden flex items-center gap-3">
           <a
-            href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"
+            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-[#C4714A] text-white uppercase tracking-[0.15em]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
-            Gift Cards
+            Book Now
           </a>
           <button
             onClick={() => setOpen(!open)}
-            className="p-2 -mr-1.5 flex flex-col justify-center gap-[5px]"
+            className="p-2 -mr-1.5 flex flex-col justify-center gap-[5px] cursor-pointer"
             aria-label="Toggle menu"
           >
             <span
