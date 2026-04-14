@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(npm run:*)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(wmic logicaldisk:*)",
+      "Bash(npx next:*)"
     ]
   }
 }

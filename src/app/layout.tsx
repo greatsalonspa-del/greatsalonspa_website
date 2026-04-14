@@ -23,8 +23,7 @@ const inter = Inter({
   display: "swap",
 });
 
-const OG_IMAGE =
-  "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=1200&auto=format&fit=crop";
+const OG_IMAGE = "https://www.greatsalonspa.com/logo.png";
 
 export const metadata: Metadata = {
   title: "Great Salon & Spa — Vienna, Virginia",

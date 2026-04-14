@@ -115,12 +115,27 @@ export default function Footer() {
 
         {/* Bottom row */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p
-            className="text-white/18 text-center sm:text-left"
-            style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}
-          >
-            &copy; {year} Great Salon &amp; Spa. All rights reserved.
-          </p>
+          <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-5">
+            <p
+              className="text-white/18 text-center sm:text-left"
+              style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}
+            >
+              &copy; {year} Great Salon &amp; Spa. All rights reserved.
+            </p>
+            <div className="flex items-center gap-4">
+              <a href="/privacy-policy"
+                 className="text-white/18 hover:text-white/50 transition-colors duration-200"
+                 style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}>
+                Privacy Policy
+              </a>
+              <span className="text-white/10">·</span>
+              <a href="/terms"
+                 className="text-white/18 hover:text-white/50 transition-colors duration-200"
+                 style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}>
+                Terms of Service
+              </a>
+            </div>
+          </div>
           <div className="flex items-center gap-6">
             {[
               { label: "Instagram", href: "https://www.instagram.com/greatsalonspa" },
