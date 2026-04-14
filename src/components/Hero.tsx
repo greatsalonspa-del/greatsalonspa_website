@@ -52,7 +52,7 @@ export default function Hero() {
                       py-12 sm:py-28 md:py-32 max-w-5xl mx-auto">
 
         {/* Location eyebrow */}
-        <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-9 lg:mb-14 animate-fade-in anim-delay-100 ml-32 sm:ml-32 lg:ml-48">
+        <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-9 lg:mb-14 animate-fade-in anim-delay-100">
           <div className="h-px w-6 sm:w-10 bg-white/22" />
           <span
             className="text-white/45 uppercase tracking-[0.45em] sm:tracking-[0.65em]"

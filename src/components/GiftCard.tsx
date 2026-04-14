@@ -72,7 +72,7 @@ export default function GiftCard() {
 
         {/* Fine print */}
         <p
-          className="text-white/20 mt-6"
+          className="text-white/35 mt-6"
           style={{ fontFamily: "var(--font-inter)", fontSize: "11px", fontWeight: 300 }}
         >
           Delivered instantly · Valid for all services

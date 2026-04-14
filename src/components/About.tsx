@@ -84,7 +84,7 @@ export default function About() {
               fill
               sizes="(max-width: 1024px) 100vw, 480px"
               className="object-cover object-center"
-              style={{ filter: "saturate(0.8) brightness(0.75)" }}
+              style={{ filter: "saturate(0.85) brightness(0.88)" }}
             />
             {/* Dark edge fade to blend with section background */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/40 via-transparent to-transparent lg:block hidden" />

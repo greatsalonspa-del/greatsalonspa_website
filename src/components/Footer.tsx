@@ -146,8 +146,8 @@ export default function Footer() {
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/18 hover:text-[#C4714A] uppercase tracking-[0.22em] transition-colors duration-200 py-1"
-                style={{ fontFamily: "var(--font-inter)", fontSize: "9px" }}
+                className="text-white/35 hover:text-[#C4714A] uppercase tracking-[0.22em] transition-colors duration-200 py-1"
+                style={{ fontFamily: "var(--font-inter)", fontSize: "11px" }}
               >
                 {s.label}
               </a>

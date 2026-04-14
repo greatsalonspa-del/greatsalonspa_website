@@ -42,7 +42,7 @@ export default function Navbar() {
             Great
           </span>
           <span
-            className="text-white/20 uppercase tracking-[0.4em] mt-0.5 block"
+            className="text-white/30 uppercase tracking-[0.4em] mt-0.5 block"
             style={{ fontFamily: "var(--font-playfair)", fontSize: "8px", fontWeight: 400 }}
           >
             Salon &amp; Spa
@@ -77,10 +77,19 @@ export default function Navbar() {
             href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"
             target="_blank"
             rel="noopener noreferrer"
+            className="px-6 py-2.5 border border-white/15 text-white/45 hover:border-white/30 hover:text-white/70 transition-all duration-300 uppercase tracking-[0.2em]"
+            style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 500 }}
+          >
+            Gift Cards
+          </a>
+          <a
+            href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-2.5 bg-[#C4714A] text-white hover:bg-white hover:text-[#0D0D0D] transition-all duration-300 uppercase tracking-[0.2em]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 600 }}
           >
-            Gift Cards
+            Book Now
           </a>
         </div>
 
@@ -140,6 +149,18 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          <li>
+            <a
+              href="https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setOpen(false)}
+              className="text-white hover:text-[#C4714A] uppercase tracking-[0.2em] transition-colors block py-1"
+              style={{ fontFamily: "var(--font-inter)", fontSize: "13px", fontWeight: 600 }}
+            >
+              Book Now
+            </a>
+          </li>
           <li>
             <a
               href="https://app.squareup.com/gift/MLA369GDZAYHQ/order"

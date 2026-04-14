@@ -164,7 +164,7 @@ export default function ServiceStrip() {
             return (
               <div
                 key={s.title}
-                className="group bg-[#0D0D0D] hover:bg-[#0f0f0f] transition-colors duration-300
+                className="group bg-[#0D0D0D] hover:bg-[#141414] transition-colors duration-300
                            p-5 sm:p-8 lg:p-10 flex flex-col items-center text-center sm:items-start sm:text-left"
               >
                 {/* Icon */}
@@ -191,10 +191,10 @@ export default function ServiceStrip() {
                 {/* Terracotta separator */}
                 <div className="w-6 sm:w-8 h-px bg-[#C4714A]/40 mb-3 sm:mb-4" aria-hidden="true" />
 
-                {/* Description — hidden on mobile to keep 2-col cards clean */}
+                {/* Description */}
                 <p
-                  className="hidden sm:block text-white/45 leading-relaxed flex-1"
-                  style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(13px, 1.5vw, 14px)", fontWeight: 300 }}
+                  className="text-white/45 leading-relaxed flex-1 line-clamp-3 sm:line-clamp-none"
+                  style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(12px, 1.5vw, 14px)", fontWeight: 300 }}
                 >
                   {s.desc}
                 </p>
