@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 export default function About() {
   return (
@@ -12,6 +13,7 @@ export default function About() {
 
           {/* Left: text */}
           <div className="flex flex-col justify-center px-7 sm:px-10 lg:px-16 py-14 sm:py-20 lg:py-24 order-2 lg:order-1">
+            <Reveal direction="left">
             <p
               className="text-[#C4714A] uppercase tracking-[0.5em] mb-5 sm:mb-7"
               style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
@@ -74,10 +76,12 @@ export default function About() {
                 </div>
               ))}
             </div>
+            </Reveal>
           </div>
 
           {/* Right: full-bleed image */}
           <div className="relative h-[320px] sm:h-[420px] lg:h-auto order-1 lg:order-2 overflow-hidden">
+            <Reveal direction="right" delay={150} className="absolute inset-0">
             <Image
               src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?q=80&w=1200&auto=format&fit=crop"
               alt="Spa treatment at Great Salon and Spa"
@@ -88,6 +92,7 @@ export default function About() {
             />
             {/* Dark edge fade to blend with section background */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#0D0D0D]/40 via-transparent to-transparent lg:block hidden" />
+            </Reveal>
           </div>
 
         </div>

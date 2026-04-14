@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const GIFT_CARD_URL = "https://app.squareup.com/gift/MLA369GDZAYHQ/order";
 
 export default function GiftCard() {
@@ -13,6 +15,7 @@ export default function GiftCard() {
       <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#C4714A]/20 to-transparent" />
 
       <div className="max-w-screen-md mx-auto px-7 sm:px-10 text-center flex flex-col items-center">
+        <Reveal className="flex flex-col items-center w-full">
 
         {/* Eyebrow */}
         <p
@@ -78,6 +81,7 @@ export default function GiftCard() {
           Delivered instantly · Valid for all services
         </p>
 
+        </Reveal>
       </div>
     </section>
   );

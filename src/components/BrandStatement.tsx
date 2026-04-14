@@ -1,9 +1,12 @@
+import Reveal from "./Reveal";
+
 export default function BrandStatement() {
   return (
     <section className="bg-[#1A1A1A] py-20 sm:py-28 lg:py-36 px-7 sm:px-10 lg:px-16 overflow-hidden">
       <div className="max-w-screen-xl mx-auto">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-10 lg:gap-20">
           {/* Left: big italic statement */}
+          <Reveal direction="left" className="flex-1">
           <blockquote className="flex-1">
             <p
               className="text-white leading-[1.12]"
@@ -21,8 +24,10 @@ export default function BrandStatement() {
               personal.
             </p>
           </blockquote>
+          </Reveal>
 
           {/* Right: supporting text + link */}
+          <Reveal direction="right" delay={180} className="lg:max-w-sm lg:pb-3 shrink-0">
           <div className="lg:max-w-sm lg:pb-3 shrink-0">
             <div className="w-10 h-px bg-white/15 mb-6 sm:mb-7" aria-hidden="true" />
             <p
@@ -51,6 +56,7 @@ export default function BrandStatement() {
               </svg>
             </a>
           </div>
+          </Reveal>
         </div>
       </div>
     </section>

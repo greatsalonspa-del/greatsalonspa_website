@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const SQUARE_URL =
   "https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services";
 
@@ -125,7 +127,7 @@ export default function ServiceStrip() {
       <div className="max-w-screen-xl mx-auto px-7 sm:px-10 lg:px-16">
 
         {/* Section header */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8 sm:mb-14 lg:mb-16">
+        <Reveal className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-8 sm:mb-14 lg:mb-16">
           <div>
             <p
               className="text-[#C4714A] uppercase tracking-[0.45em] mb-2 sm:mb-3"
@@ -144,6 +146,7 @@ export default function ServiceStrip() {
           <a
             href={SQUARE_URL}
             className="group hidden sm:inline-flex items-center gap-3 px-7 py-3.5
+                       cursor-pointer
                        border border-white/15 text-white/50
                        hover:border-[#C4714A] hover:text-[#C4714A]
                        transition-all duration-300 uppercase tracking-[0.22em] shrink-0 self-end"
@@ -155,9 +158,10 @@ export default function ServiceStrip() {
               <path d="M1 5h10M7 1l4 4-4 4" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
-        </div>
+        </Reveal>
 
         {/* Icon + text grid — gap-px with background creates hairline dividers */}
+        <Reveal delay={120}>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-px bg-white/[0.05]">
           {SERVICES.map((s) => {
             const Icon = s.Icon;
@@ -216,6 +220,7 @@ export default function ServiceStrip() {
             );
           })}
         </div>
+        </Reveal>
 
         {/* Mobile CTA */}
         <div className="mt-7 sm:hidden flex justify-center">

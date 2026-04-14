@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 const SQUARE_BOOKING_URL =
   "https://book.squareup.com/appointments/rpad4r74waczrj/location/LQ5APZMWFKHYR/services";
 
@@ -7,6 +9,7 @@ export default function Booking() {
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 min-h-[420px] sm:min-h-[500px] lg:min-h-[580px]">
         {/* Left: big headline */}
         <div className="flex flex-col justify-center px-7 sm:px-10 lg:px-16 py-12 sm:py-20 lg:py-24">
+          <Reveal direction="left">
           <p
             className="text-white/55 uppercase tracking-[0.5em] mb-5 sm:mb-7"
             style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
@@ -33,10 +36,12 @@ export default function Booking() {
           >
             Your appointment
           </p>
+          </Reveal>
         </div>
 
         {/* Right: CTA content */}
         <div className="flex flex-col justify-center px-7 sm:px-10 lg:px-16 py-10 sm:py-16 lg:py-24 bg-white/[0.06] border-t lg:border-t-0 lg:border-l border-white/15">
+          <Reveal direction="right" delay={150}>
           <p
             className="text-white/75 leading-[1.88] mb-10 sm:mb-12 max-w-[400px]"
             style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(14px, 2.3vw, 16px)", fontWeight: 300 }}
@@ -75,6 +80,7 @@ export default function Booking() {
               (571) 670-9838
             </a>
           </p>
+          </Reveal>
         </div>
       </div>
     </section>

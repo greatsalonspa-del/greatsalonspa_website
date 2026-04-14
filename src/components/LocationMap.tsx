@@ -1,3 +1,5 @@
+import Reveal from "./Reveal";
+
 export default function LocationMap() {
   return (
     <section id="location" className="bg-[#0D0D0D]">
@@ -17,6 +19,7 @@ export default function LocationMap() {
 
       {/* Info bar */}
       <div className="max-w-screen-xl mx-auto px-7 sm:px-10 lg:px-16 py-8 sm:py-10 border-t border-white/[0.05]">
+        <Reveal>
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 sm:gap-10">
           {/* Address */}
           <div>
@@ -63,6 +66,7 @@ export default function LocationMap() {
             </a>
           </div>
         </div>
+        </Reveal>
       </div>
     </section>
   );

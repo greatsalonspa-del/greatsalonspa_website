@@ -3,19 +3,37 @@
 import { useState, useEffect } from "react";
 
 const NAV_LINKS = [
-  { label: "About", href: "#about" },
+  { label: "About",    href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Location", href: "#location" },
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled]           = useState(false);
+  const [open, setOpen]                   = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
 
   useEffect(() => {
     const fn = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", fn, { passive: true });
     return () => window.removeEventListener("scroll", fn);
+  }, []);
+
+  useEffect(() => {
+    const ids = ["about", "services", "booking", "location"];
+    const els = ids.map(id => document.getElementById(id)).filter(Boolean) as HTMLElement[];
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) setActiveSection(e.target.id);
+        });
+      },
+      { threshold: 0, rootMargin: "-35% 0px -60% 0px" }
+    );
+
+    els.forEach(el => observer.observe(el));
+    return () => observer.disconnect();
   }, []);
 
   useEffect(() => {
@@ -52,17 +70,22 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <ul className="hidden md:flex items-center gap-10">
-          {NAV_LINKS.map((l) => (
-            <li key={l.label}>
-              <a
-                href={l.href}
-                className="text-white/55 hover:text-white transition-colors duration-200 uppercase tracking-[0.22em]"
-                style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
-              >
-                {l.label}
-              </a>
-            </li>
-          ))}
+          {NAV_LINKS.map((l) => {
+            const isActive = activeSection === l.href.replace("#", "");
+            return (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  className={`transition-colors duration-200 uppercase tracking-[0.22em] ${
+                    isActive ? "text-[#C4714A]" : "text-white/55 hover:text-white"
+                  }`}
+                  style={{ fontFamily: "var(--font-inter)", fontSize: "10px", fontWeight: 400 }}
+                >
+                  {l.label}
+                </a>
+              </li>
+            );
+          })}
         </ul>
 
         {/* Desktop right */}
