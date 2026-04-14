@@ -171,13 +171,13 @@ export default function Hero() {
           >
             (571) 670-9838
           </a>
-          <span className="w-px h-3.5 bg-white/15" aria-hidden="true" />
+          {/* <span className="w-px h-3.5 bg-white/15" aria-hidden="true" />
           <span
             className="text-white/32"
             style={{ fontFamily: "var(--font-inter)", fontSize: "clamp(12px, 2.5vw, 13px)", fontWeight: 300 }}
           >
             Walk-ins Welcome
-          </span>
+          </span> */}
         </div>
       </div>
 
